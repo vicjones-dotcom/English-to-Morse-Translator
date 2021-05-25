@@ -19,7 +19,7 @@ body {
 button {
   background: #e1aaaa;
   color: black;
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  box-shadow: 12px 12px 2px 0.1px rgba(0, 0, 255, 0.2);
   border-radius: 10px;
   font-size: 15px;
   padding: 10px 10px;

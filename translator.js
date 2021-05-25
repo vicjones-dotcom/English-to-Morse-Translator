@@ -1,5 +1,15 @@
 export const translateEnglishToMorse = (letter) => {
-  const letters = {
+  const alphabet = {
+    1: ".----",
+    2: "..---",
+    3: "...--",
+    4: "....-",
+    5: ".....",
+    6: "-....",
+    7: "--...",
+    8: "---..",
+    9: "----.",
+    0: "-----",
     a: ".-",
     b: "-...",
     c: "-.-.",
@@ -27,6 +37,15 @@ export const translateEnglishToMorse = (letter) => {
     y: "-.--",
     z: "--..",
   };
+  return letter
+    .split(" ")
+    .map((a) =>
+      a
+        .split(" ")
+        .map((b) => ref[b])
+        .join("")
+    )
+    .join(" ");
   if (letter === "a") {
     return ".-";
   } else if (letter === "b") {

@@ -1,4 +1,4 @@
 # English-to-Morse-Translator
 
 Work in progress.
-The translator can translate individual letters in English to Morse.
+A mini-project using HTML, CSS, and JavaScript to translate English into Morse code.

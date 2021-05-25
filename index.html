@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="translator.css" />
+    <title>English to Morse Translator</title>
   </head>
   <body>
-    <h1>English to Morse Translation</h1>
-    <input id="english-input" type="text" placeholder="Type English here" />
-    <!-- challenge - when this button is clicked translate -->
-    <button>Translate</button>
-    <h4>Your Morse translation is : <span id="morse-word"></span></h4>
+    <div class="container">
+      <h1>English to Morse Translation</h1>
+      <input
+        class="input"
+        id="english-input"
+        type="text"
+        placeholder="Type English here"
+      />
+      <!-- challenge - when this button is clicked translate -->
+      <button>Translate</button>
+      <h4>Your Morse translation is : <span id="morse-word"></span></h4>
+    </div>
     <script src="script.js" type="module"></script>
   </body>
 </html>

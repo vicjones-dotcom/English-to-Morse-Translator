@@ -1,13 +1,30 @@
-export const translateEnglishToMorse = (word) => {
-  if (word === "a") {
-    return ".-";
-  } else if (word === "b") {
-    return "-...";
-  } else if (word === "c") {
-    return "-.-.";
-  } else if (word === "hello") {
-    return ".... . .-.. .-.. ---";
-  } else {
-    return "unavailable";
-  }
+export const translateEnglishToMorse = (letter) => {
+  const letters = {
+    a: ".-",
+    b: "-...",
+    c: "-.-.",
+    d: "-..",
+    e: ".",
+    f: "..-.",
+    g: "--.",
+    h: "....",
+    i: "..",
+    j: ".---",
+    k: "-.-",
+    l: ".-..",
+    m: "--",
+    n: "-.",
+    o: "---",
+    p: ".--.",
+    q: "--.-",
+    r: ".-.",
+    s: "...",
+    t: "-",
+    u: "..-",
+    v: "...-",
+    w: ".--",
+    x: "-..-",
+    y: "-.--",
+    z: "--..",
+  };
 };

@@ -15,7 +15,7 @@ body {
 }
 h1 {
   color: black;
-  width: 40%;
+  width: 50%;
   margin: 10px auto;
 }
 h4 {
@@ -58,7 +58,12 @@ button:hover {
 }
 @media screen and (max-width: 516px) {
   .container {
-    width: 60%;
+    width: 75%;
     height: 70vh;
+  }
+}
+@media screen and (max-width: 380px) {
+  .container {
+    width: 100%;
   }
 }

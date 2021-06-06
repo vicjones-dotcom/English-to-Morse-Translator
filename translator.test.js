@@ -109,7 +109,3 @@ it("Should translate undefined to unavailable", () => {
   const result = translateEnglishToMorse("undefined");
   expect(result).toBe("unavailable");
 });
-it("Should translate hello world to .... . .-.. .-.. --- / .-- --- .-. .-.. -..", () => {
-  const result = translateEnglishToMorse("hello world");
-  expect(result).toBe(".... . .-.. .-.. --- / .-- --- .-. .-.. -..");
-});

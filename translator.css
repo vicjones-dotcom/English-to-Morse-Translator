@@ -3,6 +3,8 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-image: url("./images/morse-code.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 .container {
   margin: 20px auto;
@@ -44,19 +46,19 @@ button:hover {
 }
 @media screen and (max-width: 1032px) {
   .container {
-    width: 30%;
-    height: 40vh;
+    width: 40%;
+    height: 80vh;
   }
 }
 @media screen and (max-width: 748px) {
   .container {
-    width: 40%;
-    height: 30vh;
+    width: 45%;
+    height: 70vh;
   }
 }
 @media screen and (max-width: 516px) {
   .container {
     width: 60%;
-    height: 35vh;
+    height: 70vh;
   }
 }

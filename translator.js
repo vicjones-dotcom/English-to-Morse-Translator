@@ -1,5 +1,6 @@
-export const translateEnglishToMorse = (letter) => {
-  const alphabet = {
+export const translateEnglishToMorse = (character) => {
+  const message = "Hello World";
+  const characters = {
     1: ".----",
     2: "..---",
     3: "...--",
@@ -37,66 +38,71 @@ export const translateEnglishToMorse = (letter) => {
     y: "-.--",
     z: "--..",
   };
-  return letter
-    .split(" ")
-    .map((a) =>
-      a
-        .split(" ")
-        .map((b) => ref[b])
-        .join("")
-    )
-    .join(" ");
-  if (letter === "a") {
+  const messageConverted = [];
+
+  // return character
+  //   .split(" ")
+  //   .map((word) =>
+  //     word
+  //       .split(" ")
+  //       .map((letter) => characters[letter])
+  //       .join("")
+  //   )
+  //   .join(" ");
+  // const decoded = translateEnglishtoMorse("hello world");
+  // console.log(decoded);
+
+  if (character === "a") {
     return ".-";
-  } else if (letter === "b") {
+  } else if (character === "b") {
     return "-...";
-  } else if (letter === "c") {
+  } else if (character === "c") {
     return "-.-.";
-  } else if (letter === "d") {
+  } else if (character === "d") {
     return "-..";
-  } else if (letter === "e") {
+  } else if (character === "e") {
     return ".";
-  } else if (letter === "f") {
+  } else if (character === "f") {
     return "..-.";
-  } else if (letter === "g") {
+  } else if (character === "g") {
     return "--.";
-  } else if (letter === "h") {
+  } else if (character === "h") {
     return "....";
-  } else if (letter === "i") {
+  } else if (character === "i") {
     return "..";
-  } else if (letter === "j") {
+  } else if (character === "j") {
     return ".---";
-  } else if (letter === "k") {
+  } else if (character === "k") {
     return "-.-";
-  } else if (letter === "l") {
+  } else if (character === "l") {
     return ".-..";
-  } else if (letter === "m") {
+  } else if (character === "m") {
     return "--";
-  } else if (letter === "n") {
+  } else if (character === "n") {
     return "-.";
-  } else if (letter === "o") {
+  } else if (character === "o") {
     return "---";
-  } else if (letter === "p") {
+  } else if (character === "p") {
     return ".--.";
-  } else if (letter === "q") {
+  } else if (character === "q") {
     return "--.-";
-  } else if (letter === "r") {
+  } else if (character === "r") {
     return ".-.";
-  } else if (letter === "s") {
+  } else if (character === "s") {
     return "...";
-  } else if (letter === "t") {
+  } else if (character === "t") {
     return "-";
-  } else if (letter === "u") {
+  } else if (character === "u") {
     return "..-";
-  } else if (letter === "v") {
+  } else if (character === "v") {
     return "...-";
-  } else if (letter === "w") {
+  } else if (character === "w") {
     return ".--";
-  } else if (letter === "x") {
+  } else if (character === "x") {
     return "-..-";
-  } else if (letter === "y") {
+  } else if (character === "y") {
     return "-.--";
-  } else if (letter === "z") {
+  } else if (character === "z") {
     return "--..";
   } else {
     return "unavailable";
